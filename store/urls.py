@@ -7,10 +7,14 @@ from .views.cart import Cart
 from .views.checkout import CheckOut
 from .views.orders import OrderView
 from .middlewares.auth import  auth_middleware
+from django.urls import path
+from .views import HomeView
+
+
 
 
 urlpatterns = [
-    path('', Index.as_view(), name='homepage'),
+    path('', HomeView.as_view(), name='home'),
     path('store', store , name='store'),
 
     path('signup', Signup.as_view(), name='signup'),
