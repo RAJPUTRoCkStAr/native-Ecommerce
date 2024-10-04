@@ -124,5 +124,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = "/image/download/"
 MEDIA_ROOT = BASE_DIR
-+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
